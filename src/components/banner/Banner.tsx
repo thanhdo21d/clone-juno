@@ -1,13 +1,14 @@
 import React from 'react'
-import Banner1 from "../../assets/image/banner-1.webp"
+import Banner1 from "../../assets/image/banner-3.jpeg"
 import Banner2 from "../../assets/image/banner-2.webp"
+import { Outlet } from 'react-router-dom'
+import HangMoi from '../HangMoi/HangMoi'
 
 const Banner = () => {
   return (
-      <div>
+      <div className=''>
           <img className='w-full h-screen' src={Banner1} />
-          <img src={Banner2 } />
-          
+          <HangMoi/>
     </div>
   )
 }

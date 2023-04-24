@@ -1,31 +1,33 @@
 import React, { useState } from 'react'
 import Logo from "../../assets/image/logo-svg.svg"
 import Banner from '../banner/Banner'
+import { Outlet } from 'react-router-dom'
+
 import styled from 'styled-components'
 const Header = () => {
      const [showSearch, SetShowSearch] = useState(false);
     const [inputHover, SetInputHover] = useState(false);
   return (
-      <Container className='container mx-auto h-[100px] '>
-          <div className="justify-around items-center flex">
+      <Container className='mx-auto'>
+          <div className="justify-around items-center flex h-[70px]">
               
              <div>
-              <img className='w-[90px] h-[90px] ' src={Logo } />
+              <img className='w-[90px] h-[90px] cursor-pointer	' src={Logo } />
           </div>
           {/*  */}
 
           <div>
               <ul className="flex gap-7 ">
-                  <li className='text-[##000000] text-sm hover:opacity-60'>HÀNG MỚI</li>
-                  <li className='text-[##000000] text-sm hover:opacity-60'>SẢN PHẨM</li>
-                  <li className='text-[##000000] text-sm hover:opacity-60'>BST TAKE ME TO SUMMER</li>
-                  <li className='text-[#f40000] text-sm hover:opacity-60'>SALE</li>
-                  <li className='text-[#f40000] text-sm hover:opacity-60'>SALE QUẦN ÁO ĐẾN 50%</li>
-                  <li className='text-[##000000] text-sm hover:opacity-60'>SHOWROOM</li>
+                  <li className='text-text-slate-600 text-sm hover:opacity-60 cursor-pointer'>HÀNG MỚI</li>
+                  <li className='text-text-slate-600 text-sm hover:opacity-60 cursor-pointer'>SẢN PHẨM</li>
+                  <li className='text-text-slate-600 text-sm hover:opacity-60 cursor-pointer'>BST TAKE ME TO SUMMER</li>
+                  <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer'>SALE</li>
+                  <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer'>SALE QUẦN ÁO ĐẾN 50%</li>
+                  <li className=' text-slate-600 text-sm hover:opacity-60 cursor-pointer'>SHOWROOM</li>
               </ul>
           </div>
 
-              <div>
+              <div className='flex gap-8'>
                   {/*  */}
                     <div className={`search ${showSearch ? "show-search" : " "}`}>
                         <button onFocus={() => SetShowSearch(true)} onBlur={() => {
@@ -35,7 +37,7 @@ const Header = () => {
                              <i className="fa fa-search"></i>
                           
                         </button>
-                        <input type="text" placeholder='Search'
+                        <input className='w-[80px]' type="text" placeholder='Search'
                             onMouseEnter={() => { SetInputHover(true) }}
                             onMouseLeave={() => SetInputHover(true)}
                             onBlur={() => {
@@ -45,24 +47,16 @@ const Header = () => {
                         />
 
                   </div>
-                  {/*  */}
-                  {/* <input className='w-[80px]' type="search" placeholder='tim kiem'
-                    onMouseEnter={() => { SetInputHover(true) }}
-                            onMouseLeave={() => SetInputHover(true)}
-                            onBlur={() => {
-                                SetShowSearch(false)
-                                SetInputHover(false)
-                            }}
-                  /> 
-                  <i className="fa fa-search"></i> */}
+                  <div className='flex gap-4 mt-2'>
+                  <i className="fa fa-user cursor-pointer"></i>
+                  <i className="fa fa-shopping-cart cursor-pointer"></i>
               </div>
-              <div className='flex gap-4'>
-                  <i className="fa fa-user"></i>
-                  <i className="fa fa-shopping-cart"></i>
               </div>
+             
 
           </div>
-         <Banner/>
+          <Outlet />
+          
     </Container>
   )
 }
@@ -91,7 +85,7 @@ const Container = styled.div`
                     transition: 0.3s ease-in-out;
                     background-color: transparent;
                     border: none;
-                    color: white;
+                    color: black;
                         &:focus{
                             outline: none;
                         }
@@ -101,7 +95,7 @@ const Container = styled.div`
                 border:1px solid white;
                 background-color:rgba(0,0,0,0.06);
                 input{
-                    width: 100%;
+                    width: 50%;
                     opacity: 1;
                     visibility: visible;
                     padding: 0.3rem;
