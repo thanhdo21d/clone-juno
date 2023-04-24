@@ -18,9 +18,9 @@ const Header = () => {
 
           <div>
               <ul className="flex gap-7 ">
-                  <li className='text-slate-500 text-sm hover:opacity-60 cursor-pointer font-extralight'>HÀNG MỚI</li>
-                  <li className='text-slate-500 text-sm hover:opacity-60 cursor-pointer font-extralight'>SẢN PHẨM</li>
-                  <li className='text-slate-500 text-sm hover:opacity-60 cursor-pointer font-extralight'>BST TAKE ME TO SUMMER</li>
+                  <li className='text-sm text-gray-950 hover:opacity-60 cursor-pointer font-extralight'>HÀNG MỚI</li>
+                  <li className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SẢN PHẨM</li>
+                  <li className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>BST TAKE ME TO SUMMER</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE QUẦN ÁO ĐẾN 50%</li>
                   <li className=' text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SHOWROOM</li>
