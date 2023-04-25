@@ -49,7 +49,7 @@ const HangMoi = () => {
           <span className='text-center block text-[##252a2b] font-bold mt-2'>299,000</span>
         </div>
           </div>
-          <div className='w-[100px] block text-center'>
+          <div className='w-[100px] block text-center mx-auto'>
               <h3 className='inline-block cursor-pointer mt-14 font-extralight'>XEM TẤT CẢ</h3>
           <hr className='bg-black border-2 '/>
           </div>

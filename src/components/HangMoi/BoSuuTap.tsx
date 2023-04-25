@@ -1,12 +1,19 @@
 import React from 'react'
+import HangMoi from './HangMoi'
+import GoiY from './GoiY'
 
 const BoSuuTap = () => {
    
-  return (
-      <div className='mt-14'>
-          <h1 className='text-center font-bold text-[22px] leading-8 tracking-wider	'>BỘ SƯU TẬP</h1>
-          <iframe className='mt-9 border-gray-300 border-2 w-full' width={"100%"} height="500  h-0 relative pb-56.25% border-2 " allow="autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/M5sXSeqD9xU?autoplay=1&mute=1&loop=1&playlist=M5sXSeqD9xU&controls=0&showinfo=0" frameBorder="0" allowFullScreen={true}   ></iframe>
+    return (
+      <div>
+               <div className='mt-14 justify-center'>
+          <h1 className='text-center font-bold text-[22px] leading-8 tracking-wider	mb-10'>BỘ SƯU TẬP</h1>
+         <iframe className='mx-auto' autoFocus autoCorrect='' autoCapitalize=''  width="80%" height="500" src="https://www.youtube.com/embed/5i9jLUE2BqY" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowFullScreen></iframe>
+    
+            </div>
+            <GoiY/>
       </div>
+   
   )
 }
 

@@ -1,24 +1,26 @@
 import React, { useState } from 'react'
 import Logo from "../../assets/image/logo-svg.svg"
-import Banner from '../banner/Banner'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 
 import styled from 'styled-components'
 const Header = () => {
+const navigate = useNavigate()
+
      const [showSearch, SetShowSearch] = useState(false);
     const [inputHover, SetInputHover] = useState(false);
+    const [showCart,setShowCart] = useState(false);
   return (
       <Container className='mx-auto'>
           <div className="justify-around items-center flex h-[70px]">
               
              <div>
-              <img className='w-[90px] h-[90px] cursor-pointer	' src={Logo } />
+              <img onClick={()=> navigate("/")} className='w-[90px] h-[90px] cursor-pointer	' src={Logo } />
           </div>
           {/*  */}
 
           <div>
               <ul className="flex gap-7 ">
-                  <li className='text-sm text-gray-950 hover:opacity-60 cursor-pointer font-extralight'>HÀNG MỚI</li>
+                  <li onClick={()=>{navigate("/hangmoimenu")} } className='text-sm text-gray-950 hover:opacity-60 cursor-pointer font-extralight'>HÀNG MỚI</li>
                   <li className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SẢN PHẨM</li>
                   <li className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>BST TAKE ME TO SUMMER</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE</li>
@@ -48,9 +50,20 @@ const Header = () => {
 
                   </div>
                   <div className='flex gap-4 mt-2'>
-                  <i className="fa fa-user cursor-pointer"></i>
-                  <i className="fa fa-shopping-cart cursor-pointer"></i>
-              </div>
+                  <i  className="fa fa-user cursor-pointer"></i>
+                  <i onClick={()=>{setShowCart(!showCart)}} className="fa fa-shopping-cart cursor-pointer"></i>
+                      {showCart && (
+                          <div  className='cart-item'>
+                            
+                              <div>
+                                  <h1>GIỎ HÀNG</h1>
+                                  <p>Bạn đang có 0 sản phẩm trong giỏ hàng.</p>
+                                  <hr/>
+                            </div>
+                        
+                         </div>
+             )}
+                  </div>
               </div>
              
 
@@ -100,5 +113,12 @@ const Container = styled.div`
                     visibility: visible;
                     padding: 0.3rem;
                 }
+            }
+            .cart-item{
+                width:100%;
+                height: 100%;
+                background-color:rgba(0,0,0,0.06);
+                position: fixed;
+                margin-top: 20px;
             }
 `
