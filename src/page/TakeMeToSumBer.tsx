@@ -190,7 +190,7 @@ const TakeMeToSumBer = () => {
                   </div>
 
                    <div>
-                      <img src={Tui22} />
+                      <img src={Tui23} />
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">Disney x Juno</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>
@@ -198,7 +198,7 @@ const TakeMeToSumBer = () => {
                       
                   </div>
                    <div>
-                      <img src={Tui22} />
+                      <img src={Tui24} />
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">Your Next Move</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>
@@ -206,7 +206,7 @@ const TakeMeToSumBer = () => {
                       
                   </div>
                    <div>
-                      <img src={Tui22} />
+                      <img src={Tui25} />
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">Gemstone</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>
