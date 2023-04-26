@@ -5,6 +5,7 @@ import Header from './components/header/Header'
 import Banner from './components/banner/Banner'
 import HangMoi from './components/HangMoi/HangMoi'
 import HangMoiMeNu from './components/HangMoi/HangMoiMenu/HangMoiMeNu'
+import TakeMeToSumBer from './page/TakeMeToSumBer'
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
 
           <Route path='/' element={<Banner />} />
           <Route path='/hangmoimenu' element={<HangMoiMeNu />} />
+          <Route path='/taketosumber' element={<TakeMeToSumBer />} />
+
 
         </Route>
     </Routes>
