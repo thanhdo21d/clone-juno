@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+import mongoosePaginate from "mongoose-paginate-v2";
 const productSchema = new mongoose.Schema(
   {
     name: {
@@ -31,14 +31,30 @@ const productSchema = new mongoose.Schema(
           required: true,
         },
 
-        large_url: String,
-        medium_url: String,
-        small_url: String,
-        thumbnail_url: String,
+        large_url: {
+          type: String,
+        },
+        medium_url: {
+          type: String,
+        },
+        small_url: {
+          type: String,
+        },
+        thumbnail_url: {
+          type: String,
+        },
       },
     ],
-  },
-  { timestamps: true, versionKey: false }
-);
 
+    categoryId: {
+      type: mongoose.Types.ObjectId,
+      ref: "category",
+    },
+  },
+  {
+    timestamps: true,
+    versionKey: false,
+  }
+);
+productSchema.plugin(mongoosePaginate);
 export default mongoose.model("Product", productSchema);

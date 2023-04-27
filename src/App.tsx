@@ -1,31 +1,27 @@
-
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Header from './components/header/Header'
-import Banner from './components/banner/Banner'
-import HangMoi from './components/HangMoi/HangMoi'
-import HangMoiMeNu from './components/HangMoi/HangMoiMenu/HangMoiMeNu'
-import TakeMeToSumBer from './page/TakeMeToSumBer'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LayoutClient from "./Layout/LayoutClient/LayoutClient";
+import HangMoiMeNu from "./components/HangMoi/HangMoiMenu/HangMoiMeNu";
+import TakeMeToSumBer from "./page/TakeMeToSumBer";
+import Homepages from "./Client/HomePages/Homepages";
+import LayoutAdmin from "./Layout/LayoutAdmin/LayoutAdmin";
+import Dashboard from "./Admin/Dashboard/Dashboard";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
-         <Route path='/' element={<Header />}>
-          <Route index element={<Banner />} />
-          <Route index element={<HangMoi />} />
-
-          <Route path='/' element={<Banner />} />
-          <Route path='/hangmoimenu' element={<HangMoiMeNu />} />
-          <Route path='/taketosumber' element={<TakeMeToSumBer />} />
-
-
+        <Route path="/" element={<LayoutClient />}>
+          <Route index element={<Homepages />} />
+          <Route path="/hangmoimenu" element={<HangMoiMeNu />} />
+          <Route path="/taketosumber" element={<TakeMeToSumBer />} />
         </Route>
-    </Routes>
-    
+
+        <Route path="/admin" element={<LayoutAdmin />}>
+          <Route index element={<Dashboard />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
