@@ -71,9 +71,9 @@ const Dashboard: React.FC = () => {
       width: "15%",
       editable: true,
       align: "center",
-      // render: (text: string) => (
-      //   <span>{text.length > 20 ? `${text.slice(0, 30)}...` : text}</span>
-      // ),
+      //   render: (text: string) => (
+      //     <span>{text.length > 20 ? `${text.slice(0, 30)}...` : text}</span>
+      //   ),
     },
     {
       title: "Mô tả",
