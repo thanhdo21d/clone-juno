@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Banner2 from "../assets/image/banner-3.jpeg"
+import Banner2 from "../assets/image/BC_WOMEN_EDITORIALISATION_37_LVCOM_2048x1152_DI3.avif"
 import Banner3 from "../assets/image/summer.webp"
 import Banner4 from "../assets/image/summer/1_769870d9013f43d9a81030e9731f11b0.jpg"
 import Banner5 from "../assets/image/summer/ban1.jpeg"
@@ -59,12 +59,14 @@ const TakeMeToSumBer = () => {
           
           <div className='flex justify-center gap-8 mt-5'>
               <div>
-                  <img className='cursor-pointer font-extralight' src={Tui1} />
+                  <img className='cursor-pointer font-extralight transform 
+                                transition duration-500 hover:scale-110' src={Tui1} />
                   <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ 2 Ngăn Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
                <div>
-                  <img src={Tui2} />
+                  <img src={Tui2} className='transform 
+                                transition duration-500 hover:scale-110'/>
                     <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
@@ -82,17 +84,20 @@ const TakeMeToSumBer = () => {
 
           <div className='flex justify-center gap-8 mt-5'>
               <div>
-                  <img src={Tui6} />
+                  <img src={Tui6} className='transform 
+                                transition duration-500 hover:scale-110'/>
                   <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
                <div>
-                  <img src={Tui7} />
+                  <img src={Tui7} className='transform 
+                                transition duration-500 hover:scale-110'/>
                   <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
                <div>
-                  <img src={Tui8} />
+                  <img src={Tui8} className='transform 
+                                transition duration-500 hover:scale-110'/>
                   <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
@@ -113,13 +118,17 @@ const TakeMeToSumBer = () => {
 
            <div className='flex justify-center gap-8 mt-5'>
               <div>
-                  <img src={Tui12} />
-                  <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
+                  <img src={Tui12} className='transform 
+                                transition duration-500 hover:scale-110'/>
+                  <p className='text-center cursor-pointer font-extralight transform 
+                                transition duration-500 hover:scale-110 '>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
                <div>
-                  <img src={Tui13} />
-                  <p className='text-center cursor-pointer font-extralight'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
+                  <img src={Tui13} className='transform 
+                                transition duration-500 hover:scale-110' />
+                  <p className='text-center cursor-pointer font-extralight transform 
+                                transition duration-500 hover:scale-110'>Túi Xách Nhỏ Đeo Vai Lượn Sóng In Hoa Nhí</p>
                   <p className='text-center font-bold cursor-pointer pt-1'>755,000₫</p>
               </div>
               
@@ -175,13 +184,14 @@ const TakeMeToSumBer = () => {
 
           <div className='container mx-auto'>
               <div className='container w-[250px] mx-auto text-center mt-60'>
-              <h1 className='text-center font-semibold'>XEM THÊM BỘ SƯU TẬP KHÁC</h1>
+              <h1 className='text-center font-semibold cursor-pointer'>XEM THÊM BỘ SƯU TẬP KHÁC</h1>
               <hr className='border w-[250px] mt-2 '/>
               </div>
               
               <div className='flex  gap-8 mt-10'>
                   <div className=''>
-                      <img src={Tui22} />
+                      <img src={Tui22} className='cursor-pointer transform 
+                                transition duration-500 hover:scale-110'/>
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">The Fold</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>
@@ -190,7 +200,8 @@ const TakeMeToSumBer = () => {
                   </div>
 
                    <div>
-                      <img src={Tui23} />
+                      <img src={Tui23} className='cursor-pointer transform 
+                                transition duration-500 hover:scale-110'/>
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">Disney x Juno</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>
@@ -198,7 +209,8 @@ const TakeMeToSumBer = () => {
                       
                   </div>
                    <div>
-                      <img src={Tui24} />
+                      <img src={Tui24} className='cursor-pointer transform 
+                                transition duration-500 hover:scale-110'/>
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">Your Next Move</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>
@@ -206,7 +218,8 @@ const TakeMeToSumBer = () => {
                       
                   </div>
                    <div>
-                      <img src={Tui25} />
+                      <img src={Tui25} className='cursor-pointer transform 
+                                transition duration-500 hover:scale-110'/>
                       <p className='cursor-pointer font-extralight text-center mt-2'>BỘ SƯU TẬP</p>
                       <h5 className="font-bold text-center my-2 text-[22px]">Gemstone</h5>
                       <p className='cursor-pointer font-extralight text-center'>Năm 2020 "restart" mọi thứ trở lại ban đầu, mở ra phía trước một trang giấy trắng.</p>

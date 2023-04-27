@@ -3,14 +3,20 @@ import Logo from "../../assets/image/logo-svg.svg"
 import { Outlet, useNavigate } from 'react-router-dom'
 
 import styled from 'styled-components'
+import Signin from './Signin'
 const Header = () => {
+    
 const navigate = useNavigate()
 
      const [showSearch, SetShowSearch] = useState(false);
     const [inputHover, SetInputHover] = useState(false);
-    const [showCart,setShowCart] = useState(false);
-  return (
-      <Container className='mx-auto'>
+    const [showCart, setShowCart] = useState(false);
+    const [model,setModel] = useState(false);
+    
+    return (
+      
+        <Container className='mx-auto'>
+            <Signin open={model} handelClose={()=>setModel(false)}></Signin>
           <div className="justify-around items-center flex h-[70px]">
               
              <div>
@@ -20,12 +26,12 @@ const navigate = useNavigate()
 
           <div>
               <ul className="flex gap-7 ">
-                  <li onClick={()=>{navigate("/hangmoimenu")} } className='text-sm text-gray-950 hover:opacity-60 cursor-pointer font-extralight'>HÀNG MỚI</li>
-                  <li className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SẢN PHẨM</li>
-                  <li onClick={()=>{navigate("/taketosumber")} } className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>TAKE ME TO SUMMER</li>
+                  <li onClick={()=>{navigate("/hangmoimenu")} } className='text-sm cursor-pointer text-gray-950 hover:opacity-60 font-extralight'>HÀNG MỚI</li>
+                  <li className='text-sm cursor-pointer text-slate-600 hover:opacity-60 font-extralight'>SẢN PHẨM</li>
+                  <li onClick={()=>{navigate("/taketosumber")} } className='text-sm cursor-pointer text-slate-600 hover:opacity-60 font-extralight'>TAKE ME TO SUMMER</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE QUẦN ÁO ĐẾN 50%</li>
-                  <li onClick={()=>{navigate("/showrom")} } className=' text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SHOWROOM</li>
+                  <li onClick={()=>{navigate("/showrom")} } className='text-sm cursor-pointer text-slate-600 hover:opacity-60 font-extralight'>SHOWROOM</li>
               </ul>
           </div>
 
@@ -50,19 +56,9 @@ const navigate = useNavigate()
 
                   </div>
                   <div className='flex gap-4 mt-2'>
-                  <i  className="fa fa-user cursor-pointer"></i>
-                  <i onClick={()=>{setShowCart(!showCart)}} className="fa fa-shopping-cart cursor-pointer"></i>
-                      {showCart && (
-                          <div  className='cart-item'>
-                            
-                              <div>
-                                  <h1>GIỎ HÀNG</h1>
-                                  <p>Bạn đang có 0 sản phẩm trong giỏ hàng.</p>
-                                  <hr/>
-                            </div>
-                        
-                         </div>
-             )}
+                  <i  className="cursor-pointer fa fa-user"></i>
+                  <i onClick={()=> setModel(true)} className="cursor-pointer fa fa-shopping-cart"></i>
+                  
                   </div>
               </div>
              

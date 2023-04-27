@@ -8,11 +8,11 @@ import HangMoiMeNu from './components/HangMoi/HangMoiMenu/HangMoiMeNu'
 import TakeMeToSumBer from './page/TakeMeToSumBer'
 import Sale from './page/Sale'
 import ShowRom from './page/ShowRom'
-
 function App() {
 
   return (
     <BrowserRouter>
+     
       <Routes>
          <Route path='/' element={<Header />}>
           <Route index element={<Banner />} />
