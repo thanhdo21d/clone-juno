@@ -25,7 +25,7 @@ const navigate = useNavigate()
                   <li onClick={()=>{navigate("/taketosumber")} } className='text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>TAKE ME TO SUMMER</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE</li>
                   <li className='text-[#f40000] text-sm hover:opacity-60 cursor-pointer font-extralight'>SALE QUẦN ÁO ĐẾN 50%</li>
-                  <li className=' text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SHOWROOM</li>
+                  <li onClick={()=>{navigate("/showrom")} } className=' text-slate-600 text-sm hover:opacity-60 cursor-pointer font-extralight'>SHOWROOM</li>
               </ul>
           </div>
 

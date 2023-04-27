@@ -7,6 +7,7 @@ import HangMoi from './components/HangMoi/HangMoi'
 import HangMoiMeNu from './components/HangMoi/HangMoiMenu/HangMoiMeNu'
 import TakeMeToSumBer from './page/TakeMeToSumBer'
 import Sale from './page/Sale'
+import ShowRom from './page/ShowRom'
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
           <Route path='/hangmoimenu' element={<HangMoiMeNu />} />
           <Route path='/taketosumber' element={<TakeMeToSumBer />} />
           <Route path='/sale' element={<Sale />} />
+          <Route path='/showrom' element={<ShowRom />} />
+
 
 
 
