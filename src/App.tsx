@@ -8,6 +8,7 @@ import HangMoiMeNu from './components/HangMoi/HangMoiMenu/HangMoiMeNu'
 import TakeMeToSumBer from './page/TakeMeToSumBer'
 import Sale from './page/Sale'
 import ShowRom from './page/ShowRom'
+import ChiTietSp from './page/ChiTietSp'
 function App() {
 
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path='/taketosumber' element={<TakeMeToSumBer />} />
           <Route path='/sale' element={<Sale />} />
           <Route path='/showrom' element={<ShowRom />} />
+          <Route path='/chitiet' element={<ChiTietSp />} />
+
 
 
 
