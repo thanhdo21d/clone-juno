@@ -9,6 +9,8 @@ import TakeMeToSumBer from './page/TakeMeToSumBer'
 import Sale from './page/Sale'
 import ShowRom from './page/ShowRom'
 import ChiTietSp from './page/ChiTietSp'
+import HeaderAdmin from './Layout/LayoutAdmin'
+import Dashboard from './Admin/Dashboard'
 function App() {
 
   return (
@@ -30,6 +32,9 @@ function App() {
 
 
 
+        </Route>
+        <Route path='/admin' element={<HeaderAdmin/>}>
+<Route index element={<Dashboard/>} />
         </Route>
     </Routes>
     
